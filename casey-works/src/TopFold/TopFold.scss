@@ -1,0 +1,14 @@
+#TopFold {
+  width: 80%;
+  height: 500px;
+  // border-bottom: 3px solid black;
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 100%;
+  transform: skewY(-4deg);
+  background: white;
+  top: -50%;
+  z-index: -1;
+  left: 0;
+}

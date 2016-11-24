@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NavBar.css';
+import './NavBar.scss';
 import SVGlogo from './logo.svg';
 
 class NavBar extends Component {
