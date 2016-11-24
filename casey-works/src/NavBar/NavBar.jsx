@@ -9,9 +9,11 @@ class NavBar extends Component {
         <nav>
           <div id="leftNav">
             <li><a href="#">Works</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Ideas</a></li>
           </div>
-          <img id="navlogo" src={SVGlogo} alt="logo"/>
+          <a href="#">
+            <img id="navlogo" src={SVGlogo} alt="logo"/>
+          </a>
           <div id="rightNav">
             <li><a href="#">Tools</a></li>
             <li><a href="#">Connect</a></li>

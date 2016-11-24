@@ -6,9 +6,25 @@
   position: absolute;
   height: 130%;
   width: 100%;
-  transform: skewY(-4deg);
+  // transform: skewY(6deg);
   background: white;
-  top: -50%;
-  z-index: -1;
+  color: black;
+  // top: -50%;
+  z-index: 0;
   left: 0;
+  .content {
+    // position: absolute;
+    border: 3px solid black;
+    width: 95%;
+    height: 50%;
+    margin: 6% 2.5% 0 2.5%;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+    // transform: skewY(6deg);
+    h3 {
+      text-decoration: underline;
+      font-size: 150%;
+      color: black;
+    }
+  }
 }

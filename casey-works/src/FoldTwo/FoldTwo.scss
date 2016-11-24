@@ -4,9 +4,33 @@
   height: 1000px;
   width: 100%;
   display: block;
-  transform: skewY(4deg);
+  transform: skewY(-6deg);
   background: black;
   z-index: -5;
+  .content {
+    position: absolute;
+    // border: 3px solid white;
+    width: 95%;
+    height: 86%;
+    margin: 6% 2.5% 0 2.5%;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    transform: skewY(6deg);
+    h3 {
+      text-decoration: underline;
+      font-size: 150%;
+    }
+    #face {
+      margin: 0 10% 0 0;
+      width: 150px;
+      height: 150px;
+      z-index: 100;
+      border-radius: 50%;
+      border: 3px solid white;
+      border-image-offset: 10px;
+      float: right;
+    }
+  }
 }
 // #TopFold:after {
 //
