@@ -8,7 +8,7 @@ class FoldTwo extends Component {
       <div className="FoldTwo" id="FoldTwo">
       <div className="content">
         <h3><b>Area Two</b></h3>
-        <img src="https://avatars0.githubusercontent.com/u/12385571?v=3&s=460" alt="face" id="face"/>
+        {/* <img src="https://avatars0.githubusercontent.com/u/12385571?v=3&s=460" alt="face" id="face"/> */}
       </div>
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './NavBar.scss';
-import SVGlogo from './logo.svg';
+import Logo from './Logo/Logo.jsx';
 
 class NavBar extends Component {
   render() {
@@ -12,7 +12,7 @@ class NavBar extends Component {
             <li><a href="#"><div className="navGlitch" data-text="Ideas">Ideas</div></a></li>
           </div>
           <a href="#">
-            <img id="navlogo" src={SVGlogo} alt="logo"/>
+            <Logo />
           </a>
           <div id="rightNav">
             <li><a href="#"><div className="navGlitch" data-text="Tools">Tools</div></a></li>

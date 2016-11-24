@@ -1,22 +1,22 @@
 #TopFold {
-  width: 80%;
-  height: 500px;
+  margin-top: 50px;
+  height: 900px;
   // border-bottom: 3px solid black;
   content: "";
   position: absolute;
-  height: 130%;
   width: 100%;
   // transform: skewY(6deg);
   background: white;
   color: black;
-  // top: -50%;
+  top: 0;
+  // position: fixed;
   z-index: 0;
   left: 0;
   .content {
     // position: absolute;
     border: 3px solid black;
     width: 95%;
-    height: 50%;
+    height: 70%;
     margin: 6% 2.5% 0 2.5%;
     color: black;
     font-family: 'Inconsolata', monospace;
