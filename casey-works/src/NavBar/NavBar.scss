@@ -1,13 +1,16 @@
 #NavBar {
-  z-index: 9999;
+  z-index: 98;
   top: 0;
   display: relative;
+  position:fixed;
   nav {
     width: 100%;
     height: 80px;
     /*text-align: center;*/
     /*border-bottom: 2px black solid;*/
     overflow: hidden;
+    // color: rgb(0, 255, 255);
+    // mix-blend-mode: difference;
     #navlogo {
       width: 40%;
       max-height: 95%;
@@ -25,6 +28,7 @@
       list-style: none;
       max-height: 75px;
       font-family: 'Inconsolata', monospace;
+      font-size-adjust: 1;
       max-width: 49%;
       margin-left: 10%;
       margin-right: 10%;
@@ -38,6 +42,56 @@
         color: black;
         text-decoration: none;
       }
+      a:hover {
+        font-weight:bolder;
+      }
     }
+  }
+  .navGlitch {
+    position: relative;
+  }
+  .navGlitch::before,
+  .navGlitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .navGlitch::before {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    background: none;
+  }
+  .navGlitch::after {
+    left: -5px;
+    text-shadow: -2px 0 blue;
+    background: none;
+  }
+  .navGlitch::before {
+    clip: rect(44px, 450px, 56px, 0);
+  }
+  @keyframes glitch-anim-1 {
+    $steps: 10;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      }
+    }
+  }
+  @keyframes glitch-anim-2 {
+    $steps: 10;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      }
+    }
+  }
+  .navGlitch::before {
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+  }
+  .navGlitch::after {
+    animation: glitch-anim-2 2s infinite linear alternate-reverse;
   }
 }

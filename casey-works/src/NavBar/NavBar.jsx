@@ -8,15 +8,15 @@ class NavBar extends Component {
       <div className="NavBar" id="NavBar">
         <nav>
           <div id="leftNav">
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Ideas</a></li>
+            <li><a href="#"><div className="navGlitch" data-text="Works">Works</div></a></li>
+            <li><a href="#"><div className="navGlitch" data-text="Ideas">Ideas</div></a></li>
           </div>
           <a href="#">
             <img id="navlogo" src={SVGlogo} alt="logo"/>
           </a>
           <div id="rightNav">
-            <li><a href="#">Tools</a></li>
-            <li><a href="#">Connect</a></li>
+            <li><a href="#"><div className="navGlitch" data-text="Tools">Tools</div></a></li>
+            <li><a href="#"><div className="navGlitch" data-text="Connect">Connect</div></a></li>
           </div>
         </nav>
       </div>
